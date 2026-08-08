@@ -31,13 +31,12 @@ if (swapEl && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   swapEl.style.transition = "opacity 0.22s ease";
 }
 
-// Formulaire de contact (démo statique — à connecter à un backend / service d'emails)
-const form = document.getElementById("contactForm");
+// Formulaire de contact — envoi natif via FormSubmit (redirection avec confirmation)
 const note = document.getElementById("formNote");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  note.textContent = "Message prêt à être envoyé — branchez ce formulaire à votre API ou à un service comme Formspree.";
-});
+if (new URLSearchParams(location.search).get("sent") === "1") {
+  note.textContent = "Message envoyé — nous revenons vers vous sous 24-48h.";
+  history.replaceState(null, "", location.pathname + location.hash);
+}
 
 // Reveal au scroll
 const revealTargets = document.querySelectorAll(".service-card, .portfolio-card, .process-list li, .why-item, .faq-item");
