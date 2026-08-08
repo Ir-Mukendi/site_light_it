@@ -141,14 +141,21 @@ h1,h2,h3,h4{font-family: var(--font-display); font-weight:700; letter-spacing:-0
 }
 
 .hero-visual{ position:relative; display:flex; justify-content:center; }
-.hero-svg{ width:100%; max-width:420px; overflow:visible; }
-.ring{ fill:none; stroke: var(--orange); stroke-opacity:0.18; stroke-width:1.4; }
-.ring-1{ animation: spin 40s linear infinite; }
-.ring-2{ stroke-opacity:0.28; animation: spin 30s linear infinite reverse; }
-.ring-3{ stroke-opacity:0.4; animation: spin 22s linear infinite; }
-.node{ fill: var(--orange); }
-.node-group{ transform-origin: 240px 240px; animation: spin 40s linear infinite; }
-.core{ fill: var(--orange); }
+.hero-photo-wrap{
+  position:relative; width:100%; max-width:380px; aspect-ratio: 4/5;
+  border-radius: 28px; overflow:hidden; box-shadow: var(--shadow);
+}
+.hero-photo-wrap::after{
+  content:""; position:absolute; inset:0; border-radius:28px;
+  box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.25);
+}
+.hero-photo{ width:100%; height:100%; object-fit:cover; }
+.hero-ring{
+  position:absolute; border-radius:50%; border:1.4px solid var(--orange);
+  opacity:0.25; pointer-events:none;
+}
+.hero-ring-1{ width:120%; height:120%; top:-10%; left:-10%; animation: spin 40s linear infinite; }
+.hero-ring-2{ width:135%; height:135%; top:-17.5%; left:-17.5%; opacity:0.15; animation: spin 55s linear infinite reverse; }
 @keyframes spin{ to{ transform: rotate(360deg); } }
 
 /* ============ MARQUEE ============ */
@@ -208,14 +215,13 @@ h1,h2,h3,h4{font-family: var(--font-display); font-weight:700; letter-spacing:-0
 }
 .portfolio-card:hover{ transform: translateY(-6px); box-shadow: var(--shadow); }
 .portfolio-thumb{
-  background: linear-gradient(160deg, var(--orange-pale), var(--paper));
-  color: var(--orange-deep);
-  padding: 1.6rem;
+  height: 170px; overflow:hidden;
 }
-.pf-bar{ fill: var(--orange); }
-.pf-bar-light{ fill: rgba(212,80,10,0.35); }
-.pf-block{ fill: var(--white); stroke: var(--orange-deep); stroke-width:2; }
-.pf-outline{ color: rgba(212,80,10,0.45); }
+.portfolio-thumb img{
+  width:100%; height:100%; object-fit:cover;
+  transition: transform 0.4s var(--ease);
+}
+.portfolio-card:hover .portfolio-thumb img{ transform: scale(1.06); }
 .portfolio-card h3{ font-size:1.08rem; padding: 1.3rem 1.4rem 0.4rem; }
 .portfolio-card p{ color: var(--ink-soft); font-size:0.92rem; padding: 0 1.4rem; }
 .portfolio-tags{ display:flex; gap:0.5rem; flex-wrap:wrap; padding: 1rem 1.4rem 1.5rem; }
@@ -308,6 +314,8 @@ h1,h2,h3,h4{font-family: var(--font-display); font-weight:700; letter-spacing:-0
 }
 .certif-badge:hover{ border-color: var(--orange); transform: translateY(-4px); box-shadow: var(--shadow); }
 .certif-badge em{ font-style:normal; display:block; font-family: var(--font-body); font-weight:500; font-size:0.7rem; color: var(--ink-soft); margin-top:0.2rem; }
+.certif-badge img{ max-height: 34px; max-width: 100%; width:auto; filter: grayscale(1) opacity(0.75); transition: filter 0.25s; }
+.certif-badge:hover img{ filter: grayscale(0) opacity(1); }
 .certif-note{ margin-top:1.2rem; font-size:0.85rem; color: var(--ink-soft); font-style:italic; }
 
 /* FAQ */
