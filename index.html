@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light IT Solutions — IT, réseaux, sécurité &amp; énergie</title>
+<meta name="description" content="Light IT Solutions : développement web/mobile, câblage réseau RJ45, sécurité électronique (CCTV, alarmes, contrôle d'accès), solutions photovoltaïques, téléphonie IP et formations.">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <img src="assets/logo.png" alt="Light IT Solution — Votre partenaire en innovation technologique" class="logo-img">
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#pourquoi">Pourquoi nous</a>
+      <a href="#portfolio">Réalisations</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Discutons de votre projet</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">IT, réseaux, sécurité &amp; énergie</p>
+      <h1>
+        On construit
+        <span class="hero-swap" id="heroSwap">votre infrastructure</span>
+        de A à Z.
+      </h1>
+      <p class="hero-lede">
+        Light IT Solutions accompagne les entreprises sur tout le spectre technique :
+        applications sur mesure, réseau, sécurité électronique, énergie et téléphonie —
+        un seul interlocuteur pour toute votre infrastructure IT.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Démarrer un projet</a>
+        <a href="#portfolio" class="btn btn-ghost">Voir nos réalisations</a>
+      </div>
+      <div class="hero-stack" aria-label="Domaines d'intervention">
+        <span>Développement</span><span>Réseaux RJ45</span><span>CCTV &amp; alarmes</span><span>Photovoltaïque</span><span>Téléphonie IP</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 480 480" class="hero-svg">
+        <circle cx="240" cy="240" r="180" class="ring ring-1"/>
+        <circle cx="240" cy="240" r="140" class="ring ring-2"/>
+        <circle cx="240" cy="240" r="100" class="ring ring-3"/>
+        <g class="node-group">
+          <circle cx="240" cy="60" r="7" class="node"/>
+          <circle cx="420" cy="240" r="7" class="node"/>
+          <circle cx="240" cy="420" r="7" class="node"/>
+          <circle cx="60" cy="240" r="7" class="node"/>
+        </g>
+        <rect x="205" y="205" width="70" height="70" rx="14" class="core"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3l7 3v6c0 5-3.2 7.7-7 9-3.8-1.3-7-4-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Devis gratuit &amp; sans engagement</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Techniciens certifiés multi-domaines</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="20" height="20"><rect x="4" y="10" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Garantie sur nos installations</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 21s-7-4.5-9.5-9C.7 8.2 3 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 4 0 6.3 4.2 4.5 8-2.5 4.5-9.5 9-9.5 9z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Accompagnement après mise en service</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Développement sur mesure</span><span>•</span>
+      <span>Applications mobiles</span><span>•</span>
+      <span>API robustes</span><span>•</span>
+      <span>Accompagnement continu</span><span>•</span>
+      <span>Développement sur mesure</span><span>•</span>
+      <span>Applications mobiles</span><span>•</span>
+      <span>API robustes</span><span>•</span>
+      <span>Accompagnement continu</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-head">
+      <p class="eyebrow">Ce que nous faisons</p>
+      <h2>Un service, trois manières de le vivre</h2>
+      <p class="section-lede">
+        Chaque projet part d'un besoin réel, jamais d'un template. Voici comment nous
+        transformons votre cahier des charges en produit utilisé au quotidien.
+      </p>
+    </div>
+
+    <div class="services-grid services-grid-6">
+      <article class="service-card" tabindex="0">
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" width="32" height="32"><rect x="4" y="8" width="32" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 15 H36" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="11.5" r="1.2" fill="currentColor"/><circle cx="13" cy="11.5" r="1.2" fill="currentColor"/><path d="M14 34 H26 M20 30 V34" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Développement web &amp; mobile</h3>
+        <p>
+          Plateformes Django/DRF et applications Flutter sur mesure, du back-office
+          solide à l'interface mobile pensée pour l'usage réel.
+        </p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" width="32" height="32"><circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="30" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 14 V22 H30 V14 M20 22 V26" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Câblage réseau RJ45</h3>
+        <p>
+          Installation et certification de réseaux structurés — baies de brassage,
+          points réseau, infrastructure filaire fiable pour vos locaux.
+        </p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" width="32" height="32"><rect x="6" y="10" width="28" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="19" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 32 H26" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Sécurité électronique</h3>
+        <p>
+          CCTV, alarmes, contrôle d'accès, barrières infrarouges et géolocalisation
+          GPS — pour surveiller et sécuriser vos sites efficacement.
+        </p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" width="32" height="32"><path d="M21 4 L9 22 H19 L17 36 L31 16 H21 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Solutions énergétiques</h3>
+        <p>
+          Installations photovoltaïques et systèmes de backup pour sécuriser votre
+          alimentation électrique, en continu ou en secours.
+        </p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" width="32" height="32"><path d="M9 25c0-8 6-15 11-15s11 7 11 15" fill="none" stroke="currentColor" stroke-width="2"/><rect x="6" y="24" width="7" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="27" y="24" width="7" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Téléphonie IP professionnelle</h3>
+        <p>
+          Déploiement de solutions de téléphonie sur IP pour vos équipes —
+          fiable, évolutif, et connecté à votre infrastructure existante.
+        </p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" width="32" height="32"><path d="M4 14 L20 6 L36 14 L20 22 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 18 V27 C11 30 15 33 20 33 C25 33 29 30 29 27 V18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Formations</h3>
+        <p>
+          Sessions pratiques pour rendre vos équipes autonomes sur les outils et
+          systèmes que nous déployons chez vous.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section section-alt why-section" id="pourquoi">
+    <div class="section-head">
+      <p class="eyebrow">Pourquoi nous choisir</p>
+      <h2>La tranquillité d'un seul interlocuteur technique</h2>
+      <p class="section-lede">
+        Que votre besoin touche au logiciel, au réseau ou à la sécurité, vous n'avez
+        qu'un seul contact du premier appel jusqu'au support après installation.
+      </p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <h4>Expertise multi-métiers</h4>
+        <p>Développement, réseau, sécurité, énergie et téléphonie sous un même toit — plus besoin de coordonner plusieurs prestataires.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <h4>Devis clair, sans surprise</h4>
+        <p>Chaque proposition détaille le périmètre, les délais et le coût avant tout engagement de votre part.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <h4>Réactivité assumée</h4>
+        <p>Réponse à votre demande sous 24 à 48h, et un suivi de chantier ou de projet tenu à jour.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <h4>Support après livraison</h4>
+        <p>Maintenance, formation de vos équipes et disponibilité après la mise en service — le projet ne s'arrête pas à l'installation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certif-section" id="certifications">
+    <div class="section-head">
+      <p class="eyebrow">Confiance &amp; expertise</p>
+      <h2>Nos certifications &amp; partenariats</h2>
+      <p class="section-lede">
+        Nous travaillons avec des équipements et méthodes reconnus dans chacun de nos
+        domaines d'intervention.
+      </p>
+    </div>
+    <div class="certif-grid certif-grid-5">
+      <div class="certif-badge"><span>Hikvision</span></div>
+      <div class="certif-badge"><span>Dahua</span></div>
+      <div class="certif-badge"><span>Mobotix</span></div>
+      <div class="certif-badge"><span>Seeworld <em>(GPS)</em></span></div>
+      <div class="certif-badge"><span>Dell</span></div>
+    </div>
+    <p class="certif-note">D'autres partenariats viendront enrichir cette liste.</p>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-alt" id="process">
+    <div class="section-head">
+      <p class="eyebrow">Notre méthode</p>
+      <h2>De l'idée à la production, sans zone grise</h2>
+    </div>
+    <ol class="process-list">
+      <li>
+        <span class="process-num">01</span>
+        <div>
+          <h4>Cadrage</h4>
+          <p>On clarifie le besoin réel, les contraintes et le budget avant d'écrire une ligne de code.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">02</span>
+        <div>
+          <h4>Architecture</h4>
+          <p>Modèle de données, API, rôles et permissions sont posés noir sur blanc dès le départ.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">03</span>
+        <div>
+          <h4>Développement</h4>
+          <p>Backend Django/DRF et interfaces Flutter avancent en parallèle, avec des points réguliers.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">04</span>
+        <div>
+          <h4>Mise en production</h4>
+          <p>Déploiement, sécurisation, et transfert de compétences pour que vous restiez autonome.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="section-head">
+      <p class="eyebrow">Nos réalisations</p>
+      <h2>Des projets pensés pour un usage réel</h2>
+    </div>
+    <div class="portfolio-grid">
+      <article class="portfolio-card">
+        <div class="portfolio-thumb" aria-hidden="true">
+          <svg viewBox="0 0 200 140"><rect width="200" height="140" fill="none"/><rect x="20" y="20" width="160" height="16" rx="4" class="pf-bar"/><rect x="20" y="46" width="100" height="10" rx="3" class="pf-bar-light"/><rect x="20" y="64" width="130" height="10" rx="3" class="pf-bar-light"/><rect x="20" y="90" width="60" height="26" rx="6" class="pf-block"/><rect x="90" y="90" width="60" height="26" rx="6" class="pf-block"/></svg>
+        </div>
+        <h3>Gestion de trésorerie</h3>
+        <p>Application Django de suivi de cashflow multi-rôles pour une équipe finance.</p>
+        <span class="portfolio-tags"><em>Django</em><em>DRF</em><em>PostgreSQL</em></span>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-thumb" aria-hidden="true">
+          <svg viewBox="0 0 200 140"><rect x="60" y="10" width="80" height="120" rx="10" fill="none" stroke="currentColor" stroke-width="2" class="pf-outline"/><rect x="70" y="24" width="60" height="80" rx="4" class="pf-block"/><circle cx="100" cy="116" r="4" class="pf-bar"/></svg>
+        </div>
+        <h3>Workflow de demandes de fonds</h3>
+        <p>Validations multi-niveaux, suivi budgétaire et paiement pour un groupe d'assurance.</p>
+        <span class="portfolio-tags"><em>Django</em><em>API REST</em><em>Sécurité</em></span>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-thumb" aria-hidden="true">
+          <svg viewBox="0 0 200 140"><rect x="60" y="10" width="80" height="120" rx="10" fill="none" stroke="currentColor" stroke-width="2" class="pf-outline"/><circle cx="100" cy="50" r="18" class="pf-block"/><rect x="76" y="76" width="48" height="8" rx="3" class="pf-bar-light"/><rect x="82" y="90" width="36" height="8" rx="3" class="pf-bar-light"/></svg>
+        </div>
+        <h3>Registre de camarades</h3>
+        <p>Répertoire mobile Flutter avec accès sécurisé, mis à jour mensuellement.</p>
+        <span class="portfolio-tags"><em>Flutter</em><em>Django/DRF</em><em>Accès admin</em></span>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="section-head">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2>Avant de nous écrire</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Combien de temps pour recevoir un devis ?</summary>
+        <p>En général sous 24 à 48h ouvrées après réception de votre demande, selon la complexité du projet.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Intervenez-vous sur tous types de projets, petits ou grands ?</summary>
+        <p>Oui — du simple câblage réseau à l'installation complète d'un système de sécurité ou d'une plateforme applicative.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Proposez-vous un accompagnement après l'installation ?</summary>
+        <p>Oui, chaque projet inclut un suivi et un support après mise en service, avec possibilité de formation de vos équipes.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Mes informations restent-elles confidentielles ?</summary>
+        <p>Oui, les informations transmises via ce site ou lors d'un échange ne sont utilisées que pour traiter votre demande.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="contact-card">
+      <div class="contact-copy">
+        <p class="eyebrow">Un projet en tête ?</p>
+        <h2>Parlons de ce que vous voulez construire.</h2>
+        <p class="section-lede">
+          Décrivez votre besoin en quelques lignes — on revient vers vous avec une
+          première lecture technique, sans jargon inutile.
+        </p>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>contact@lightitsolutions.com</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 3h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 4 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>Réponse sous 24-48h</span>
+          </li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>
+          <span>Nom</span>
+          <input type="text" name="name" required placeholder="Votre nom">
+        </label>
+        <div class="form-row">
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="vous@exemple.com">
+          </label>
+          <label>
+            <span>Téléphone <em>(optionnel)</em></span>
+            <input type="tel" name="phone" placeholder="+225 00 00 00 00">
+          </label>
+        </div>
+        <label>
+          <span>Votre message</span>
+          <textarea name="message" rows="4" required placeholder="Décrivez brièvement votre besoin..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Envoyer le message</button>
+        <p class="form-privacy">🔒 Vos coordonnées restent confidentielles et ne servent qu'à traiter votre demande.</p>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="logo">
+      <img src="assets/logo.png" alt="Light IT Solution" class="logo-img logo-img-footer">
+    </span>
+    <p>© <span id="year"></span> Light IT Solutions. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
