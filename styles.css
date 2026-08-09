@@ -336,6 +336,7 @@ h1,h2,h3,h4{font-family: var(--font-display); font-weight:700; letter-spacing:-0
 .client-badge:hover{ border-color: var(--orange); transform: translateY(-4px); box-shadow: var(--shadow); }
 .client-badge span{ font-family: var(--font-display); font-weight:700; font-size:1.05rem; color: var(--indigo); letter-spacing:0.01em; }
 .client-badge em{ font-style:normal; font-family: var(--font-body); font-weight:500; font-size:0.72rem; color: var(--ink-soft); }
+.client-badge img{ max-height:44px; max-width:100%; width:auto; }
 
 /* FAQ */
 .faq-list{ display:flex; flex-direction:column; gap:0.8rem; max-width: 760px; }
