@@ -322,6 +322,21 @@ h1,h2,h3,h4{font-family: var(--font-display); font-weight:700; letter-spacing:-0
 .certif-badge:hover img{ filter: grayscale(0) opacity(1); }
 .certif-note{ margin-top:1.2rem; font-size:0.85rem; color: var(--ink-soft); font-style:italic; }
 
+/* Clients */
+.clients-grid{ display:grid; grid-template-columns: repeat(5,1fr); gap:1.2rem; }
+.client-badge{
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  padding: 1.6rem 1rem;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:0.3rem;
+  background: var(--white);
+  min-height: 92px;
+  transition: border-color 0.25s, transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.client-badge:hover{ border-color: var(--orange); transform: translateY(-4px); box-shadow: var(--shadow); }
+.client-badge span{ font-family: var(--font-display); font-weight:700; font-size:1.05rem; color: var(--indigo); letter-spacing:0.01em; }
+.client-badge em{ font-style:normal; font-family: var(--font-body); font-weight:500; font-size:0.72rem; color: var(--ink-soft); }
+
 /* FAQ */
 .faq-list{ display:flex; flex-direction:column; gap:0.8rem; max-width: 760px; }
 .faq-item{
@@ -359,6 +374,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .why-grid{ grid-template-columns: 1fr 1fr; }
   .certif-grid{ grid-template-columns: 1fr 1fr; }
   .certif-grid-5{ grid-template-columns: repeat(3,1fr); }
+  .clients-grid{ grid-template-columns: repeat(3,1fr); }
   .process-list li + li{ border-left:none; padding-left:0; }
   .portfolio-grid{ grid-template-columns: 1fr 1fr; }
   .contact-card{ grid-template-columns:1fr; padding: 2.2rem; }
@@ -374,7 +390,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .nav-links.open{ transform: translateX(0); }
   .nav-burger{ display:flex; }
   .services-grid, .services-grid-6, .process-list, .portfolio-grid, .why-grid, .certif-grid{ grid-template-columns: 1fr; }
-  .certif-grid-5{ grid-template-columns: 1fr 1fr; }
+  .certif-grid-5, .clients-grid{ grid-template-columns: 1fr 1fr; }
   .form-row{ grid-template-columns: 1fr; }
   .trust-bar-inner{ justify-content:flex-start; }
   .hero-actions{ flex-direction:column; align-items:stretch; }
