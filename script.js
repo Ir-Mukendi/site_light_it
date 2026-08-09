@@ -31,12 +31,6 @@ if (swapEl && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   swapEl.style.transition = "opacity 0.22s ease";
 }
 
-// Formulaire de contact — envoi natif via FormSubmit (redirection avec confirmation)
-const note = document.getElementById("formNote");
-if (new URLSearchParams(location.search).get("sent") === "1") {
-  note.textContent = "Message envoyé — nous revenons vers vous sous 24-48h.";
-  history.replaceState(null, "", location.pathname + location.hash);
-}
 
 // Reveal au scroll
 const revealTargets = document.querySelectorAll(".service-card, .portfolio-card, .process-list li, .why-item, .faq-item");
