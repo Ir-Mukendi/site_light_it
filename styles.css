@@ -253,6 +253,27 @@ h1,h2,h3,h4{font-family: var(--font-display); font-weight:700; letter-spacing:-0
 .contact-list{ margin-top:1.8rem; display:flex; flex-direction:column; gap:0.9rem; }
 .contact-list li{ display:flex; align-items:center; gap:0.7rem; color: rgba(255,255,255,0.85); font-size:0.95rem; }
 .contact-list svg{ color: var(--orange); flex-shrink:0; }
+.contact-list a{ color: inherit; transition: color 0.2s; }
+.contact-list a:hover{ color: var(--orange); }
+
+/* WhatsApp floating button */
+.whatsapp-float{
+  position: fixed; right: 1.4rem; bottom: 1.4rem; z-index: 90;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: #25D366; color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 12px 28px -8px rgba(37,211,102,0.6);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  animation: wa-pulse 2.4s ease-in-out infinite;
+}
+.whatsapp-float:hover{ transform: scale(1.08); box-shadow: 0 16px 34px -8px rgba(37,211,102,0.75); }
+@keyframes wa-pulse{
+  0%, 100%{ box-shadow: 0 12px 28px -8px rgba(37,211,102,0.6), 0 0 0 0 rgba(37,211,102,0.5); }
+  50%{ box-shadow: 0 12px 28px -8px rgba(37,211,102,0.6), 0 0 0 10px rgba(37,211,102,0); }
+}
+@media (max-width:680px){
+  .whatsapp-float{ right:1rem; bottom:1rem; width:52px; height:52px; }
+}
 
 .contact-form{
   position:relative; z-index:1;
