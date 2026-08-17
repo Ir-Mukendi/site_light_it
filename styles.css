@@ -293,6 +293,16 @@ h1,h2,h3,h4{font-family: var(--font-display); font-weight:700; letter-spacing:-0
 }
 .trust-item svg{ color: var(--orange); flex-shrink:0; }
 
+/* Security detail */
+.security-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:1.4rem; }
+.security-item{
+  background: var(--paper); border:1px solid var(--line); border-radius: 14px;
+  padding: 1.6rem 1.5rem;
+}
+.security-item h4{ font-size:1.02rem; margin-bottom:0.5rem; color: var(--indigo); }
+.security-item h4 em{ font-style:normal; font-weight:500; font-size:0.82em; color: var(--ink-soft); }
+.security-item p{ color: var(--ink-soft); font-size:0.9rem; }
+
 /* Why us */
 .why-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap:1.6rem; }
 .why-item{ padding-right: 0.6rem; }
@@ -376,6 +386,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .certif-grid{ grid-template-columns: 1fr 1fr; }
   .certif-grid-5{ grid-template-columns: repeat(3,1fr); }
   .clients-grid{ grid-template-columns: repeat(3,1fr); }
+  .security-grid{ grid-template-columns: 1fr 1fr; }
   .process-list li + li{ border-left:none; padding-left:0; }
   .portfolio-grid{ grid-template-columns: 1fr 1fr; }
   .contact-card{ grid-template-columns:1fr; padding: 2.2rem; }
@@ -390,7 +401,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
   .nav-links.open{ transform: translateX(0); }
   .nav-burger{ display:flex; }
-  .services-grid, .services-grid-6, .process-list, .portfolio-grid, .why-grid, .certif-grid{ grid-template-columns: 1fr; }
+  .services-grid, .services-grid-6, .process-list, .portfolio-grid, .why-grid, .certif-grid, .security-grid{ grid-template-columns: 1fr; }
   .certif-grid-5, .clients-grid{ grid-template-columns: 1fr 1fr; }
   .form-row{ grid-template-columns: 1fr; }
   .trust-bar-inner{ justify-content:flex-start; }
